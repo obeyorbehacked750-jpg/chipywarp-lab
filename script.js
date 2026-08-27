@@ -7,10 +7,13 @@ function switchTab(tabId) {
 // Theme Toggling Logic
 function toggleTheme() {
     const body = document.body;
+    const themeIcon = document.getElementById('theme-icon');
     if (body.getAttribute('data-theme') === 'dark') {
         body.removeAttribute('data-theme');
+        themeIcon.src = 'assets/sun.png';
     } else {
         body.setAttribute('data-theme', 'dark');
+        themeIcon.src = 'assets/moon.png';
     }
 }
 
