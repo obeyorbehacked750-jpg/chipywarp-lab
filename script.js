@@ -10,10 +10,10 @@ function toggleTheme() {
     const themeIcon = document.getElementById('theme-icon');
     if (body.getAttribute('data-theme') === 'dark') {
         body.removeAttribute('data-theme');
-        themeIcon.src = 'assets/sun.png';
+        themeIcon.src = 'assets/moon.png';
     } else {
         body.setAttribute('data-theme', 'dark');
-        themeIcon.src = 'assets/moon.png';
+        themeIcon.src = 'assets/sun.png';
     }
 }
 
