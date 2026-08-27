@@ -3,9 +3,6 @@
     --text-color: #333333;
     --nav-bg: #47cc4b;
     --card-bg: #ffffff;
-    --border-color: #dddddd;
-    --primary: #007bff;
-    --primary-hover: #0056b3;
     --badge-unsandboxed: #dc3545;
     --badge-sandboxed: #28a745;
 }
@@ -15,16 +12,13 @@
     --text-color: #e0e0e0;
     --nav-bg: #47cc4b;
     --card-bg: #2a2a2a;
-    --border-color: #444;
-    --primary: #3b82f6;
-    --primary-hover: #60a5fa;
 }
 
 * { box-sizing: border-box; }
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: all 0.3s ease;
@@ -33,32 +27,33 @@ body {
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0px 30px;
     background-color: var(--nav-bg);
-    border-bottom: 1px solid var(--border-color);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo img {
     height: 40px;
+    background: none;
+}
+
+.logo:hover {
+    background: #ffffff2b;
 }
 
 .nav-links button {
     background: transparent;
-    border: 1px solid var(--border-color); /
     color: var(--text-color);
     font-size: 16px;
     cursor: pointer;
     margin-left: 15px;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 12px 8px;
     transition: background 0.2s;
 }
 
 .nav-links button:hover {
-    background: var(--border-color);
+    background: #ffffff2b;
 }
 
 .tab-content {
@@ -91,12 +86,15 @@ body {
 
 .card {
     background: var(--card-bg);
-    border: 1px solid var(--border-color);
+    border: 3px solid transparent;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    border: 3px solid var(--nav-bg);
 }
 
 .card-banner {
@@ -141,8 +139,8 @@ body {
 
 .card-footer {
     padding: 15px 20px;
-    background: var(--nav-bg);
-    border-top: 1px solid var(--border-color);
+    background: var(--card-bg);
+    border-top: 0px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -153,13 +151,13 @@ body {
     padding: 8px;
     border: none;
     border-radius: 5px;
-    background: var(--primary);
+    background: var(--nav-bg);
     color: white;
     cursor: pointer;
     font-size: 13px;
-    transition: background 0.2s;
+    transition: 0.2s;
 }
 
 .card-footer button:hover {
-    background: var(--primary-hover);
+    transform: scale(1.05);
 }
