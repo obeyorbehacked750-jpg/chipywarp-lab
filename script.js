@@ -19,7 +19,7 @@ function copyToClipboard(text, successMessage) {
     navigator.clipboard.writeText(text).then(() => {
         alert(successMessage);
     }).catch(err => {
-        alert('Failed to copy. Check console.');
+        alert('Failed to copy.');
         console.error('Clipboard error:', err);
     });
 }
@@ -40,13 +40,13 @@ function renderExtensions(extensionsData) {
         card.className = 'card';
         
         // Handle missing banners / authors
-        const bannerSrc = ext.banner ? ext.banner : 'https://via.placeholder.com/320x160?text=No+Banner';
-        const authorText = ext.author ? `by ${ext.author}` : 'by Unknown';
+        const bannerSrc = ext.banner ? ext.banner : 'https://obeyorbehacked750-jpg.github.io/chipywarp-lab/banners/unknown.png';
+        const authorText = ext.author ? `by ${ext.author}` : 'by ???';
         const badgeClass = ext.unsandboxed ? 'unsandboxed' : 'sandboxed';
         const badgeText = ext.unsandboxed ? 'Unsandboxed' : 'Sandboxed';
 
         card.innerHTML = `
-            <img src="${bannerSrc}" class="card-banner" alt="${ext.name} Banner" onerror="this.src='https://via.placeholder.com/320x160?text=Image+Error'">
+            <img src="${bannerSrc}" class="card-banner" alt="${ext.name} Banner" onerror="this.src='https://obeyorbehacked750-jpg.github.io/chipywarp-lab/banners/unknown.png'">
             <div class="card-body">
                 <h3>${ext.name}</h3>
                 <p class="author">${authorText}</p>
@@ -68,14 +68,14 @@ function renderExtensions(extensionsData) {
 async function loadExtensions() {
     try {
         const response = await fetch('extensions.json');
-        if (!response.ok) throw new Error('Network response was not ok');
+        if (!response.ok) throw new Error('Crash! Please report that error');
         
         const extensionsData = await response.json();
         renderExtensions(extensionsData);
     } catch (error) {
         console.error('Error loading extensions:', error);
         document.getElementById('card-container').innerHTML = 
-            '<p style="color: red;">Failed to load extensions. Ensure extensions.json is in the root directory.</p>';
+            '<p style="color: red;">Failed to load extensions!</p>';
     }
 }
 
