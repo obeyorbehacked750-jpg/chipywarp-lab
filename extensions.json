@@ -10,69 +10,24 @@
   },
   {
     "id": 1,
-    "name": "Oneko",
-    "description":"Add its into editor a cat what moves to your cursor.",
-    "author":"TheShovel",
-    "unsandboxed":true,
-    "file": "extensions/oneko.js",
-    "banner": "banners/thumbnail-oneko.png"
-  },
-  {
-    "id": 2,
-    "name": "Stage Brah",
-    "description":"Spawn Brah cats in your codespace!",
-    "author":" ElectricFuzzball_PM",
-    "unsandboxed":true,
-    "file": "extensions/StageBrah.js",
-    "banner": "banners/StageBrah.png"
-  },
-  {
-    "id": 3,
-    "name": "Stylus",
-    "description":"Get the pressure and tilt of a stylus or graphic tablet.",
-    "author":" sourdoggy",
-    "unsandboxed":false,
-    "file": "extensions/stylus.js",
-    "banner": "banners/stylus.png"
-  },
-  {
-    "id": 4,
     "name": "Website Hacks",
     "description":"Very strange a website hacks for turbowarp?",
-    "author":"",
+    "author":"ChipyDev",
     "unsandboxed":true,
     "file": "extensions/WebsiteHacks.js",
     "banner": "banners/WebsiteHacks.png"
   },
   {
-    "id": 5,
+    "id": 2,
     "name": "Extension creator",
     "description":"",
-    "author":"",
+    "author":"ChipyDev",
     "unsandboxed":true,
     "file": "extensions/ExtensionCreator.js",
     "banner": ""
   },
   {
-    "id": 6,
-    "name": "Auto Save",
-    "description":"Several features for games",
-    "author":"QBacks",
-    "unsandboxed":false,
-    "file": "extensions/AutoSave.js",
-    "banner": "banners/AutoSave.png"
-  },
-  {
-    "id": 7,
-    "name": "Kobold AI",
-    "description":"Generate text and images for free with the power of The Horde",
-    "author":"pooiod7",
-    "unsandboxed":false,
-    "file": "extensions/KoboldAI.js",
-    "banner": "banners/KoboldAI.svg"
-  },
-  {
-    "id": 8,
+    "id": 3,
     "name": "Chipywarp Tools",
     "description":"Some chipywarp tools idk why you need use them",
     "author":"Chipywarp",
