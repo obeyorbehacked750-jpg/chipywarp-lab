@@ -164,9 +164,13 @@ body {
     transform: scale(1.05);
 }
 
-
-
 .btn-icon {
+    width: 20px; 
+    height: 20px;
+    object-fit: contain;
+}
+    
+.theme-icon {
     width: 20px; 
     height: 20px;
     object-fit: contain;
