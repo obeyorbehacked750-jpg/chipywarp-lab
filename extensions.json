@@ -34,5 +34,14 @@
     "unsandboxed":false,
     "file": "extensions/chipywarptools.js",
     "banner": "banners/chipywarp-tools.png"
+  },
+  {
+    "id": 4,
+    "name": "Requests",
+    "description":"Fething to the internet usign extension",
+    "author":"Chipywarp",
+    "unsandboxed":true,
+    "file": "extensions/requests.js",
+    "banner": "banners/requests.png"
   }
 ]
